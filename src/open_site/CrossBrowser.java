@@ -52,7 +52,6 @@ public class CrossBrowser {
         driver.get("http://saucedemo.com");
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
-        Thread.sleep(6000);
         WebElement element = driver.findElement(By.id("login-button"));
         JavascriptExecutor executor = (JavascriptExecutor)driver;
         executor.executeScript("arguments[0].click();", element);

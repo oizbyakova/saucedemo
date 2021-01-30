@@ -46,7 +46,6 @@ public class UserAccount {
             driver.findElement(By.id("first-name")).sendKeys("John");
             driver.findElement(By.id("last-name")).sendKeys("Brown");
             driver.findElement(By.id("postal-code")).sendKeys("20950");
-            Thread.sleep(5000);
             driver.findElement(By.xpath("//*[@id='checkout_info_container']/div/form/div[2]/input")).click();
             driver.findElement(By.cssSelector("#checkout_summary_container > div > div.summary_info > div.cart_footer > a.btn_action.cart_button")).click();
                 Assert.assertEquals("THANK YOU FOR YOUR ORDER", driver.findElement
